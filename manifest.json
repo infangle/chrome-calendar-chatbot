@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Calendar Chatbot Assistant",
+    "version": "0.1",
+    "description": "A simplified assistant that manages your Google Calendar through chat.",
+    "action": {
+      "default_popup": "popup.html"
+      
+    },
+    "permissions": ["storage"],
+    "host_permissions": []
+  }
+  
