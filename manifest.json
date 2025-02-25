@@ -1,13 +1,18 @@
 {
-    "manifest_version": 3,
-    "name": "Calendar Chatbot Assistant",
-    "version": "0.1",
-    "description": "A simplified assistant that manages your Google Calendar through chat.",
-    "action": {
-      "default_popup": "popup.html"
-      
-    },
-    "permissions": ["storage"],
-    "host_permissions": []
-  }
+  "manifest_version": 3,
+  "name": "AI Calendar Assistant",
+  "version": "1.0",
+  "permissions": ["identity"],
+  "oauth2": {
+    "client_id": "386155663984-eope79f4jq1n08g80ea4p6h6jmd41aj4.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/calendar.events"]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"  }
+}
+
   
+

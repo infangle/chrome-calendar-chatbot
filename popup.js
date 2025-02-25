@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Check authentication status
+    chrome.runtime.sendMessage({ action: "checkAuth" }, (response) => {
+        if (!response.authenticated) {
+            // Removed sign-in and sign-out buttons from above the input box
+            // Optionally, you could redirect to a login page or show a login button here
+        }
+    });
+    
     const chatWindow = document.getElementById('chat-window');
     const chatInput = document.getElementById('chat-input');
     const sendBtn = document.getElementById('send-btn');
@@ -32,4 +40,3 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  

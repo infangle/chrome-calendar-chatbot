@@ -6,7 +6,16 @@
   <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
-  <div id="chat-container">
+  <div id="auth-section">
+    <div id="user-info" class="hidden">
+      <img id="user-avatar" src="" alt="User Avatar">
+      <span id="user-name"></span>
+      <button id="sign-out-btn">Sign Out</button>
+    </div>
+    <button id="sign-in-btn">Sign in with Google</button>
+    <div id="loading" class="hidden">Loading...</div>
+  </div>
+  <div id="chat-container" class="hidden">
     <div id="chat-window">
       <!-- Chat messages will appear here -->
     </div>

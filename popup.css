@@ -3,12 +3,58 @@ body {
     margin: 0;
     padding: 10px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+  #auth-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  #user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  #sign-in-btn, #sign-out-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #sign-out-btn {
+    background-color: #db4437;
+  }
+
+  #loading {
+    margin-top: 10px;
+    color: #666;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   #chat-container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
   }
   
   #chat-window {
@@ -29,4 +75,3 @@ body {
     width: 50px;
     padding: 5px;
   }
-  
